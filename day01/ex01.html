@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        maintitle
+    </h1>
+    <h2>
+        subtitle
+    </h2>
+    <p>
+        본문
+    </p>
+    <div>
+        기본태그
+    </div>
+    <input id="inputname"/>
+    <input id="inputnumber"/>
+    <button id="btltest">
+        text
+    </button>
+    <script>
+        var nametext=document.getElementById("inputname")
+        var numtext=document.getElementById("inputnumber")
+        var btl_test=document.getElementById("btltest")
+        btl_test.addEventListener('click',()=>{
+            
+            console.log('name:'+nametext.value)
+            console.log('number:'+numtext.value)
+
+        });
+    </script>
+</body>
+</html>
