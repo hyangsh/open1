@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="yourtname_text">
+        your name
+    </h1>
+    <input id="yourname_input"/>
+     <button id="btltest"></button>
+     <script>
+        var nametext=document.getElementById("yourtname_text")
+        var nametextinput=document.getElementById("yourname_input")
+        var btl_test=document.getElementById("btltest")
+        btl_test.addEventListener('click',()=>{
+            
+            nametext.innerText="your name:"+nametextinput.value
+
+        });
+     </script>
+</body>
+</html>
