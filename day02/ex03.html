@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="counttext">counter:0</h1>
+    <button id="countingbutton">inc(+)</button>
+    <button id="decbutton">inc(-)</button>
+    <button id="resetbutton">inc(0)</button>
+    <script>
+        var counttext=document.getElementById("counttext")
+        var countingbutton=document.getElementById("countingbutton")
+        var decbutton=document.getElementById("decbutton")
+        var resetbutton=document.getElementById("resetbutton")
+        var count=0;
+        countingbutton.addEventListener('click',()=>{
+            count=count+1;
+            console.log(count)
+            counttext.innerText="counter:"+count
+        });
+        decbutton.addEventListener('click',()=>{
+            count=count-1;
+            console.log(count)
+            counttext.innerText="counter:"+count
+        });
+        resetbutton.addEventListener('click',()=>{
+            count=0;
+            console.log(count)
+            counttext.innerText="counter:"+count
+        });
+    </script>
+</body>
+</html>
