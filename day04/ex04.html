@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>기차표 예약</h1>
+    <h2>출발역</h2>
+    <div>
+        <input type="radio"name="group_start" id="start-seoul"/>서울</label>
+        <input type="radio"name="group_start" id="start-kunan"/>천안</label>
+        <input type="radio"name="group_start" id="start-sajong"/>세종</label>
+        <input type="radio"name="group_start" id="start-iksan"/>익산</label>
+
+    </div>
+    <h2>도착역</h2>
+    <div>
+        
+      <select id="end">
+        <option>여수</option>
+        <option>목포</option>
+        <option>광주</option>
+        
+      </select>
+    </div>
+
+      <button id="btn_se">제출</button>
+        <p id="text-result"></p>
+        <script>
+        var btnSe=document.getElementById("btn_se")
+        var textresult =document.getElementById("text-result")
+        var starSeoul=document.getElementById("start-seoul")
+        var starKunan=document.getElementById("start-kunan")
+        var starSajong=document.getElementById("start-sajong")
+        var starIksan=document.getElementById("start-iksan")
+        var end=document.getElementById("end")
+        btnSe.addEventListener('click',()=>{
+            var start=""
+            if(starSeoul.checked){
+                start=starSeoul.nextSibling.nodeValue
+            }else if(starKunan.checked){
+                start=starKunan.nextSibling.nodeValue
+            }else if(starSajong.checked){
+                start=starSajong.nextSibling.nodeValue
+            }else if(starIksan.checked){
+                start=starIksan.nextSibling.nodeValue
+            }
+            textresult.innerText="출발역:"+start+"  도착역:"+end.value
+        })
+
+        </script>
+
+</body>
+</html>
