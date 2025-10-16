@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data color</title>
+</head>
+<body>
+    <div><input type="data" id="inpData"/>
+</div>
+<div> <input type="color" id="inpColor"/></div>
+<script>
+    const inpData=document.getElementById("inpData")
+    const inpColor=document.getElementById("inpColor")
+    inpData.addEventListener('input',()=>{
+        console.log("data : "+inpData.value);
+    })
+    inpColor.addEventListener('input',()=>{
+        console.log("color : "+inpColor.value);
+    })
+</script>
+    
+</body>
+</html>
