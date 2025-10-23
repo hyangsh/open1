@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>counter</title>
+</head>
+<style>
+    body{
+        background-color: blue;
+      color: white;
+       font-style: italic;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .box{
+        background-color: black;
+        margin-left: 350px;
+        font-size: 57pt;
+        width: 500px;
+        height: 250px;
+        padding-left: 50px;
+    }
+    .box1{
+            background-color: blue;
+        margin-left: 570px;
+        margin-top: 15px;
+        width: 500px;
+        height: 200px;
+    }
+</style>
+<body>
+    <div class="box">
+      <h1>카운터</h1>
+    </div>
+      <div class="box1" >
+      <h2 id="counttext">counter:0</h2>
+    <button id="countingbutton">inc(+)</button>
+    <button id="resetbutton">inc(0)</button>
+      </div>
+    <script>
+        var counttext=document.getElementById("counttext")
+        var countingbutton=document.getElementById("countingbutton")
+        var resetbutton=document.getElementById("resetbutton")
+        var count=0;
+
+        countingbutton.addEventListener('click',()=>{
+            count=count+1;
+            console.log(count)
+            counttext.innerText="counter:"+count
+        });
+        resetbutton.addEventListener('click',()=>{
+            count=0;
+            console.log(count)
+            counttext.innerText="counter:"+count
+        });
+    </script>
+</body>
+</html>
