@@ -1,0 +1,23 @@
+body{
+ background-color: lightblue;
+    
+    color: darkblue;   
+}
+@font-face {
+    font-family: 'ClipArtKorea';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2510-2@1.0/ClipartkoreaTTF-Light.woff2') format('woff2');
+    font-weight: 700;
+    font-display: swap;
+}
+.retro-font{
+    font-family: 'ClipArtKorea';
+    font-size: 70px;
+}
+.box-1{
+    display: flex;
+    
+    width: 200px;
+    height: 200px;
+    background-color: coral;
+    color: white;
+}

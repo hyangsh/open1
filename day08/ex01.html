@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .moving-box {
+            width: 100px;
+            height: 100px;
+            background-color: teal;
+            position: relative;
+            animation:moveBox 4s infinite alternate;
+           
+        }
+        .box{
+            width: 60px;
+            height: 30px;
+            background-color: coral;
+            margin: 20px;
+         transform: translate();
+         }
+
+        @keyframes move{
+            from{transform: translate(0px,0px);}
+            to{transform: translate(100px,100px );}
+        }
+        @keyframes rotation{
+            from{transform: rotate(0deg);}
+            to{transform: rotate(360deg);}
+        }
+        @keyframes mov-rot{
+            form{transform: translate(0px,0px) rotate(0deg);}
+            to{transform: translate(100px,100px) rotate(360deg);}
+        }
+     </style>
+</head>
+<body>
+    <div class="box" style="transform: translate(0px,0px);">box1</div>
+    <div class="box" style="position: relative;left: 0px;top: 0px;background-color: red;"></div>
+<div class="box" style="animation-name: move; animation-duration: 4s; 
+animation-iteration-count: infinite; animation-direction: alternate; animation-timing-function: linear;">
+</div>
+<div class="box" style="animation-name: rotation; animation-duration: 4s; 
+animation-iteration-count: infinite;"></div>
+
+</body>
+</html>
